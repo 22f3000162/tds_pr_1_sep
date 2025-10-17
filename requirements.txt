@@ -3,3 +3,5 @@ pydantic
 httpx
 requests
 python-dotenv
+uvicorn 
+openai
