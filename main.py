@@ -28,6 +28,11 @@ class TaskRequest(BaseModel):
     evaluation_url: str
     attachments: Optional[List[Attachment]] = []
 
+
+@app.get("/")
+def read_root():
+    return {"hello": "vercel"}
+
 @app.post("/api/task")
 async def receive_task(req: TaskRequest):
 
